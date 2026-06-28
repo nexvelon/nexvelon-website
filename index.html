@@ -207,7 +207,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .mt-7{grid-column:1/span 3;grid-row:4}.mt-8{grid-column:4/span 3;grid-row:4}
 
 .monitor-room{min-height:90vh;background:var(--noir);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:120px 56px}
-.monitor-bg{position:absolute;inset:0;background-image:url('images/operations-center.png');background-size:cover;background-position:center;filter:brightness(.45) contrast(1.1) saturate(.9);transform:scale(1.04);animation:kenBurns 30s ease-out infinite alternate}
+.monitor-bg{position:absolute;inset:0;background-image:url('images/operations-center.webp');background-size:cover;background-position:center;filter:brightness(.45) contrast(1.1) saturate(.9);transform:scale(1.04);animation:kenBurns 30s ease-out infinite alternate}
 .monitor-ovl{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(160,122,44,.15) 0%,transparent 60%),linear-gradient(180deg,rgba(10,8,7,.4) 0%,rgba(10,8,7,.85) 100%)}
 .monitor-c{position:relative;z-index:2;text-align:center;max-width:1200px}
 .monitor-eye{font-family:var(--mono);font-size:11px;letter-spacing:6px;color:var(--gold);margin-bottom:32px}
@@ -236,7 +236,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .craft-row:hover .craft-arrow{transform:translateX(8px)}
 
 .partners{background:var(--noir);padding:130px 56px;position:relative;overflow:hidden}
-.partners::before{content:'';position:absolute;inset:0;background-image:url('images/operations-center.png');background-size:cover;background-position:center;filter:brightness(.18) contrast(1.1) saturate(.8);opacity:.5}
+.partners::before{content:'';position:absolute;inset:0;background-image:url('images/operations-center.webp');background-size:cover;background-position:center;filter:brightness(.18) contrast(1.1) saturate(.8);opacity:.5}
 .partners-inner{max-width:1400px;margin:0 auto;position:relative;z-index:2}
 .partners-title{font-family:var(--serif);font-size:clamp(50px,7vw,90px);font-weight:300;line-height:.95;letter-spacing:-1.5px;color:var(--parchment);margin-bottom:26px}
 .partners-title em{font-style:italic;color:var(--gold-light)}
@@ -270,12 +270,13 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .fleet-title{font-family:var(--serif);font-size:clamp(50px,7vw,90px);font-weight:300;line-height:.95;letter-spacing:-1.5px;color:var(--parchment)}
 .fleet-title em{font-style:italic;color:var(--gold-light)}
 .fleet-sub{font-family:var(--serif);font-style:italic;font-size:20px;color:rgba(245,239,224,.7);line-height:1.55}
-.fleet-svg-wrap{background:linear-gradient(180deg,rgba(245,239,224,.04) 0%,rgba(245,239,224,.01) 100%);border:1px solid rgba(160,122,44,.2);padding:60px;position:relative}
-.fleet-svg-wrap::after{content:'— FLEET RENDERING · BRANDED LIVERY SAMPLE —';position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10px;letter-spacing:4px;color:rgba(160,122,44,.55);white-space:nowrap}
-.fleet-svg{width:100%;height:auto;max-width:1000px;display:block;margin:0 auto}
+.fleet-photo-wrap{position:relative;border:1px solid rgba(160,122,44,.25);overflow:hidden;aspect-ratio:16/9;max-width:1400px;margin:0 auto;background:var(--noir)}
+.fleet-photo{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.88) contrast(1.05) saturate(1.05);transform:scale(1.04);animation:kenBurns 24s ease-out infinite alternate}
+.fleet-photo-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,8,7,.8) 100%);pointer-events:none}
+.fleet-photo-caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10px;letter-spacing:4px;color:rgba(245,239,224,.85);text-transform:uppercase;z-index:2;white-space:nowrap;text-shadow:0 1px 2px rgba(10,8,7,.6)}
 
 .guardian{min-height:100vh;background:var(--noir);padding:130px 56px;position:relative;overflow:hidden}
-.guardian-bg{position:absolute;inset:0;background-image:url('images/fire-alarm-panel.png');background-size:cover;background-position:left center;filter:brightness(.32) contrast(1.05);opacity:.55}
+.guardian-bg{position:absolute;inset:0;background-image:url('images/fire-alarm-panel.webp');background-size:cover;background-position:left center;filter:brightness(.32) contrast(1.05);opacity:.55}
 .guardian-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,8,7,.7) 0%,rgba(10,8,7,.95) 60%),radial-gradient(ellipse at 70% 40%,rgba(160,122,44,.12) 0%,transparent 50%)}
 .guardian-inner{max-width:1500px;margin:0 auto;position:relative;z-index:2}
 .guardian-head{display:grid;grid-template-columns:1.3fr 1fr;gap:70px;align-items:end;margin-bottom:60px}
@@ -349,7 +350,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .dc:hover .dc-cta::after{transform:translateX(8px)}
 
 .cta{min-height:90vh;background:var(--noir);display:flex;align-items:center;justify-content:center;padding:130px 56px;text-align:center;position:relative;overflow:hidden}
-.cta-bg{position:absolute;inset:0;background-image:url('images/yacht-event.png');background-size:cover;background-position:center;filter:brightness(.32) contrast(1.05);opacity:.6}
+.cta-bg{position:absolute;inset:0;background-image:url('images/yacht-event.webp');background-size:cover;background-position:center;filter:brightness(.32) contrast(1.05);opacity:.6}
 .cta-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(160,122,44,.18) 0%,transparent 50%),linear-gradient(180deg,rgba(10,8,7,.5) 0%,rgba(10,8,7,.92) 100%)}
 .cta-inner{position:relative;z-index:2;max-width:1100px}
 .cta-eye{font-family:var(--mono);font-size:11px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:32px}
@@ -397,7 +398,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
   .craft-head{grid-template-columns:1fr;gap:30px}.craft-row{grid-template-columns:60px 1fr;gap:20px}
   .craft-num{grid-column:1}.craft-name{grid-column:2;font-size:24px}.craft-desc{grid-column:1/3}.craft-arrow{display:none}
   .proc-grid{grid-template-columns:1fr 1fr;row-gap:50px}
-  .fleet-head{grid-template-columns:1fr;gap:30px}.fleet-svg-wrap{padding:30px}
+  .fleet-head{grid-template-columns:1fr;gap:30px}.fleet-photo-wrap{aspect-ratio:4/3}.fleet-photo-caption{font-size:9px;letter-spacing:2px;white-space:normal;text-align:center;padding:0 16px}
   .guardian-head{grid-template-columns:1fr;gap:30px}.guardian-grid{grid-template-columns:1fr}
   .faq-head{grid-template-columns:1fr;gap:30px}.faq-q-text{font-size:20px}.faq-q-icon{font-size:28px}
   .monitor-stats{grid-template-columns:1fr;gap:40px}
@@ -435,11 +436,11 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 <main>
 
 <section class="hero" aria-label="Hero">
-  <div class="hero-slide active" style="background-image:url('images/cctv-toronto.png');" role="img" aria-label="CCTV installation in Toronto"></div>
-  <div class="hero-slide" style="background-image:url('images/brand-boardroom.png');"></div>
-  <div class="hero-slide" style="background-image:url('images/design-boardroom.png');"></div>
-  <div class="hero-slide" style="background-image:url('images/operations-center.png');"></div>
-  <div class="hero-slide" style="background-image:url('images/cable-pulling.png');"></div>
+  <div class="hero-slide active" style="background-image:url('images/cctv-toronto.webp');" role="img" aria-label="CCTV installation in Toronto"></div>
+  <div class="hero-slide" style="background-image:url('images/brand-boardroom.webp');"></div>
+  <div class="hero-slide" style="background-image:url('images/design-boardroom.webp');"></div>
+  <div class="hero-slide" style="background-image:url('images/operations-center.webp');"></div>
+  <div class="hero-slide" style="background-image:url('images/cable-pulling.webp');"></div>
   <div class="hero-overlay"></div>
   <div class="hero-noise"></div>
   <div class="hero-corner-tl">EST. MMXXV · A CANADIAN HOUSE</div>
@@ -477,10 +478,10 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
     <p class="industries-sub">Single-camera installations to thousand-camera deployments. Homes. Condominiums. Commercial towers. Industrial sites. Institutional facilities. The work is shaped by the geometry of each.</p>
   </div>
   <div class="industries-grid">
-    <div class="ind-tile reveal"><div class="ind-tile-bg" style="background-image:url('images/brand-boardroom.png');"></div><div class="ind-tile-overlay"></div><div class="ind-tile-content"><div class="ind-tile-num">SECTOR I</div><div class="ind-tile-name">Commercial<br/><em>Buildings</em></div><div class="ind-tile-desc">Office towers, mixed-use developments, corporate campuses — integrated security, life safety, access infrastructure.</div></div></div>
-    <div class="ind-tile reveal reveal-1"><div class="ind-tile-bg" style="background-image:url('images/cctv-toronto.png');"></div><div class="ind-tile-overlay"></div><div class="ind-tile-content"><div class="ind-tile-num">SECTOR II</div><div class="ind-tile-name">Residential<br/><em>Condominiums</em></div><div class="ind-tile-desc">Multi-tenant buildings, gated communities, luxury developments — concierge access, surveillance, fire and intrusion.</div></div></div>
-    <div class="ind-tile reveal reveal-2"><div class="ind-tile-bg" style="background-image:url('images/cable-pulling.png');"></div><div class="ind-tile-overlay"></div><div class="ind-tile-content"><div class="ind-tile-num">SECTOR III</div><div class="ind-tile-name">Industrial<br/><em>Sites</em></div><div class="ind-tile-desc">Warehouses, distribution centres, manufacturing plants — perimeter security, access control, structured cabling at scale.</div></div></div>
-    <div class="ind-tile reveal reveal-3"><div class="ind-tile-bg" style="background-image:url('images/operations-center.png');"></div><div class="ind-tile-overlay"></div><div class="ind-tile-content"><div class="ind-tile-num">SECTOR IV</div><div class="ind-tile-name">Institutional<br/><em>Facilities</em></div><div class="ind-tile-desc">Healthcare, education, government, mission-critical — engineered to compliance, to standard, to the discipline the brief demands.</div></div></div>
+    <div class="ind-tile reveal"><div class="ind-tile-bg" style="background-image:url('images/brand-boardroom.webp');"></div><div class="ind-tile-overlay"></div><div class="ind-tile-content"><div class="ind-tile-num">SECTOR I</div><div class="ind-tile-name">Commercial<br/><em>Buildings</em></div><div class="ind-tile-desc">Office towers, mixed-use developments, corporate campuses — integrated security, life safety, access infrastructure.</div></div></div>
+    <div class="ind-tile reveal reveal-1"><div class="ind-tile-bg" style="background-image:url('images/cctv-toronto.webp');"></div><div class="ind-tile-overlay"></div><div class="ind-tile-content"><div class="ind-tile-num">SECTOR II</div><div class="ind-tile-name">Residential<br/><em>Condominiums</em></div><div class="ind-tile-desc">Multi-tenant buildings, gated communities, luxury developments — concierge access, surveillance, fire and intrusion.</div></div></div>
+    <div class="ind-tile reveal reveal-2"><div class="ind-tile-bg" style="background-image:url('images/cable-pulling.webp');"></div><div class="ind-tile-overlay"></div><div class="ind-tile-content"><div class="ind-tile-num">SECTOR III</div><div class="ind-tile-name">Industrial<br/><em>Sites</em></div><div class="ind-tile-desc">Warehouses, distribution centres, manufacturing plants — perimeter security, access control, structured cabling at scale.</div></div></div>
+    <div class="ind-tile reveal reveal-3"><div class="ind-tile-bg" style="background-image:url('images/operations-center.webp');"></div><div class="ind-tile-overlay"></div><div class="ind-tile-content"><div class="ind-tile-num">SECTOR IV</div><div class="ind-tile-name">Institutional<br/><em>Facilities</em></div><div class="ind-tile-desc">Healthcare, education, government, mission-critical — engineered to compliance, to standard, to the discipline the brief demands.</div></div></div>
   </div>
 </section>
 
@@ -492,14 +493,14 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
     <p class="work-note">— Imagery is illustrative of the disciplines and craft. See legal notice for details. —</p>
   </div>
   <div class="mosaic">
-    <div class="mt mt-1 reveal"><div class="mt-bg" style="background-image:url('images/cctv-toronto.png');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— CCTV · TORONTO —</div><div class="mt-name">Installing the <em>camera array</em>.</div></div></div>
-    <div class="mt mt-2 reveal reveal-1"><div class="mt-bg" style="background-image:url('images/design-boardroom.png');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— DESIGN BOARDROOM —</div><div class="mt-name">Engineers &amp; designers<br/>shape the <em>blueprint</em>.</div></div></div>
-    <div class="mt mt-3 reveal reveal-2"><div class="mt-bg" style="background-image:url('images/brand-boardroom.png');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— THE HOUSE —</div><div class="mt-name">Strategy &amp; <em>review</em>.</div></div></div>
-    <div class="mt mt-4 reveal"><div class="mt-bg" style="background-image:url('images/access-programming.png');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— ACCESS CONTROL —</div><div class="mt-name">Programming the <em>panel</em>.</div></div></div>
-    <div class="mt mt-5 reveal reveal-1"><div class="mt-bg" style="background-image:url('images/fire-alarm-panel.png');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— FIRE ALARM —</div><div class="mt-name">Commissioning the <em>panel</em>.</div></div></div>
-    <div class="mt mt-6 reveal reveal-2"><div class="mt-bg" style="background-image:url('images/cable-pulling.png');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— STRUCTURED CABLING —</div><div class="mt-name">Pulling cable. <em>Building infrastructure</em>.</div></div></div>
-    <div class="mt mt-7 reveal"><div class="mt-bg" style="background-image:url('images/operations-center.png');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— OPERATIONS —</div><div class="mt-name">The watch <em>floor</em>.</div></div></div>
-    <div class="mt mt-8 reveal reveal-1"><div class="mt-bg" style="background-image:url('images/yacht-event.png');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— THE HOUSE · EVENTS —</div><div class="mt-name">A house that gathers, <em>celebrates</em>.</div></div></div>
+    <div class="mt mt-1 reveal"><div class="mt-bg" style="background-image:url('images/cctv-toronto.webp');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— CCTV · TORONTO —</div><div class="mt-name">Installing the <em>camera array</em>.</div></div></div>
+    <div class="mt mt-2 reveal reveal-1"><div class="mt-bg" style="background-image:url('images/design-boardroom.webp');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— DESIGN BOARDROOM —</div><div class="mt-name">Engineers &amp; designers<br/>shape the <em>blueprint</em>.</div></div></div>
+    <div class="mt mt-3 reveal reveal-2"><div class="mt-bg" style="background-image:url('images/brand-boardroom.webp');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— THE HOUSE —</div><div class="mt-name">Strategy &amp; <em>review</em>.</div></div></div>
+    <div class="mt mt-4 reveal"><div class="mt-bg" style="background-image:url('images/access-programming.webp');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— ACCESS CONTROL —</div><div class="mt-name">Programming the <em>panel</em>.</div></div></div>
+    <div class="mt mt-5 reveal reveal-1"><div class="mt-bg" style="background-image:url('images/fire-alarm-panel.webp');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— FIRE ALARM —</div><div class="mt-name">Commissioning the <em>panel</em>.</div></div></div>
+    <div class="mt mt-6 reveal reveal-2"><div class="mt-bg" style="background-image:url('images/cable-pulling.webp');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— STRUCTURED CABLING —</div><div class="mt-name">Pulling cable. <em>Building infrastructure</em>.</div></div></div>
+    <div class="mt mt-7 reveal"><div class="mt-bg" style="background-image:url('images/operations-center.webp');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— OPERATIONS —</div><div class="mt-name">The watch <em>floor</em>.</div></div></div>
+    <div class="mt mt-8 reveal reveal-1"><div class="mt-bg" style="background-image:url('images/yacht-event.webp');"></div><div class="mt-ovl"></div><div class="mt-c"><div class="mt-tag">— THE HOUSE · EVENTS —</div><div class="mt-name">A house that gathers, <em>celebrates</em>.</div></div></div>
   </div>
 </section>
 
@@ -561,28 +562,10 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
       <div class="reveal"><div class="chap"><span class="n">07 / 10</span><span class="l"></span><span class="t">Chapter VI — The Fleet</span></div><h2 class="fleet-title">The work,<br/><em>on the road</em>.</h2></div>
       <div class="fleet-sub reveal reveal-1">Every vehicle in the Nexvelon fleet carries the standard — and the discipline — of the house that sent it. Branded, equipped, and ready.</div>
     </div>
-    <div class="fleet-svg-wrap reveal reveal-2">
-      <svg class="fleet-svg" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg">
-        <line x1="40" y1="265" x2="960" y2="265" stroke="#a07a2c" stroke-width="0.5" opacity="0.4"/>
-        <path d="M 130 265 L 130 130 Q 130 110 150 110 L 320 110 Q 340 110 360 130 L 410 175 L 870 175 Q 890 175 890 195 L 890 265 Z" fill="#0a0807" stroke="#a07a2c" stroke-width="1.5"/>
-        <path d="M 360 130 L 410 175 L 410 265" fill="none" stroke="#a07a2c" stroke-width="1" opacity="0.5"/>
-        <path d="M 170 130 Q 175 125 185 125 L 320 125 Q 335 125 350 140 L 380 168 L 405 168 L 405 175 L 350 175 Q 335 175 320 165 L 175 165 Q 168 165 168 158 Z" fill="#1a1611" stroke="#c5a45c" stroke-width="0.6" opacity="0.95"/>
-        <rect x="425" y="195" width="445" height="55" fill="#14110d" stroke="#a07a2c" stroke-width="0.5" opacity="0.6"/>
-        <circle cx="240" cy="265" r="30" fill="#0a0807" stroke="#a07a2c" stroke-width="1.5"/>
-        <circle cx="240" cy="265" r="14" fill="#1a1611" stroke="#c5a45c" stroke-width="0.5"/>
-        <circle cx="800" cy="265" r="30" fill="#0a0807" stroke="#a07a2c" stroke-width="1.5"/>
-        <circle cx="800" cy="265" r="14" fill="#1a1611" stroke="#c5a45c" stroke-width="0.5"/>
-        <rect x="440" y="120" width="430" height="55" fill="#0a0807" stroke="#a07a2c" stroke-width="0.8" opacity="0.95"/>
-        <text x="500" y="155" font-family="Cormorant Garamond, Georgia, serif" font-size="32" font-weight="500" letter-spacing="8" fill="#f5efe0"><tspan fill="#a07a2c">NEX</tspan>VELON</text>
-        <text x="660" y="155" font-family="Cormorant Garamond, serif" font-size="13" font-style="italic" letter-spacing="3" fill="#c5a45c">· GLOBAL</text>
-        <text x="445" y="218" font-family="Cormorant Garamond, serif" font-size="13" font-style="italic" letter-spacing="2" fill="rgba(245,239,224,0.75)">Engineered to Protect Everything That Matters</text>
-        <text x="445" y="240" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="2.5" fill="#a07a2c">1-855-969-8566  ·  NEXVELONGLOBAL.COM</text>
-        <ellipse cx="135" cy="200" rx="6" ry="14" fill="#c5a45c" opacity="0.5"/>
-        <line x1="700" y1="225" x2="730" y2="225" stroke="#a07a2c" stroke-width="2"/>
-        <line x1="650" y1="195" x2="650" y2="250" stroke="#a07a2c" stroke-width="0.4" opacity="0.5"/>
-        <line x1="430" y1="113" x2="870" y2="113" stroke="#a07a2c" stroke-width="0.5" opacity="0.6"/>
-        <line x1="430" y1="252" x2="870" y2="252" stroke="#a07a2c" stroke-width="0.5" opacity="0.6"/>
-      </svg>
+    <div class="fleet-photo-wrap reveal reveal-2">
+      <div class="fleet-photo" style="background-image:url('images/fleet-vehicles.webp');" role="img" aria-label="The Nexvelon Global fleet — branded vehicles and technicians outside the headquarters"></div>
+      <div class="fleet-photo-overlay"></div>
+      <div class="fleet-photo-caption">— THE NEXVELON FLEET · BRANDED · ENGINEERED · DEPLOYED —</div>
     </div>
   </div>
 </section>
