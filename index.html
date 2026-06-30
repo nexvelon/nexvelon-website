@@ -157,7 +157,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .industries-title{font-family:var(--serif);font-size:clamp(50px,8vw,110px);font-weight:300;line-height:.95;letter-spacing:-2px;color:var(--parchment);margin-bottom:26px}
 .industries-title em{font-style:italic;color:var(--gold-light)}
 .industries-sub{font-family:var(--serif);font-style:italic;font-size:22px;color:rgba(245,239,224,.6);max-width:700px;line-height:1.55}
-.industries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;max-width:1500px;margin:0 auto}
+.industries-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;max-width:1500px;margin:0 auto}
 .ind-tile{aspect-ratio:3/4;position:relative;overflow:hidden;cursor:pointer}
 .ind-tile-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.55) contrast(1.05);transition:transform 1.6s cubic-bezier(.16,1,.3,1),filter .6s}
 .ind-tile:hover .ind-tile-bg{transform:scale(1.08);filter:brightness(.75)}
@@ -349,8 +349,8 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .dc:hover .dc-cta::after{transform:translateX(8px)}
 
 .cta{min-height:90vh;background:var(--noir);display:flex;align-items:center;justify-content:center;padding:130px 56px;text-align:center;position:relative;overflow:hidden}
-.cta-bg{position:absolute;inset:0;background-image:url('images/yacht-event.webp');background-size:cover;background-position:center;filter:brightness(.32) contrast(1.05);opacity:.6}
-.cta-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(160,122,44,.18) 0%,transparent 50%),linear-gradient(180deg,rgba(10,8,7,.5) 0%,rgba(10,8,7,.92) 100%)}
+.cta-bg{position:absolute;inset:0;background-image:url('images/yacht-event.webp');background-size:cover;background-position:center;filter:brightness(.6) contrast(1.05);opacity:.8}
+.cta-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(160,122,44,.18) 0%,transparent 50%),linear-gradient(180deg,rgba(10,8,7,.3) 0%,rgba(10,8,7,.7) 100%)}
 .cta-inner{position:relative;z-index:2;max-width:1100px}
 .cta-eye{font-family:var(--mono);font-size:11px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:32px}
 .cta-title{font-family:var(--serif);font-size:clamp(60px,10vw,140px);font-weight:300;line-height:.95;letter-spacing:-2px;color:var(--parchment);margin-bottom:36px}
@@ -390,7 +390,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
   .nav,.hero-content,.industries,.coverage,.work,.monitor-room,.craft,.partners,.process,.fleet,.guardian,.faq,.manifesto,.divisions,.stats,.cta,.footer,.legal{padding-left:24px;padding-right:24px}
   .nav{padding-top:16px;padding-bottom:16px}.nav-links{display:none}
   .hero-corner-tl,.hero-corner-tr,.hero-corner-bl,.hero-corner-br{display:none}
-  .industries-grid{grid-template-columns:1fr 1fr}
+  .industries-grid{grid-template-columns:1fr}
   .coverage-head{grid-template-columns:1fr;gap:30px}.cov-grid,.cov-grid.provinces{grid-template-columns:1fr 1fr}
   .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
   .mt-1,.mt-2,.mt-3,.mt-4,.mt-5,.mt-6,.mt-7,.mt-8{grid-column:auto;grid-row:auto}
@@ -504,9 +504,22 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
   </div>
 </section>
 
+<section class="fleet" aria-label="Fleet">
+  <div class="fleet-inner">
+    <div class="fleet-head">
+      <div class="reveal"><div class="chap"><span class="n">04 / 10</span><span class="l"></span><span class="t">Chapter III — The Fleet</span></div><h2 class="fleet-title">On site,<br/><em>equipped</em>.</h2></div>
+    </div>
+    <div class="fleet-photo-wrap reveal reveal-2">
+      <div class="fleet-photo" style="background-image:url('images/fleet-vehicles.webp');" role="img" aria-label="The Nexvelon Global fleet — branded vehicles and technicians outside the headquarters"></div>
+      <div class="fleet-photo-overlay"></div>
+      <div class="fleet-photo-caption">— THE NEXVELON FLEET · BRANDED · ENGINEERED · DEPLOYED —</div>
+    </div>
+  </div>
+</section>
+
 <section class="craft" id="craft" aria-label="Capabilities">
   <div class="craft-head">
-    <div class="reveal"><div class="chap dark"><span class="n">04 / 10</span><span class="l"></span><span class="t">Chapter III — The Craft</span></div><h2 class="craft-title">Everything we <em>build</em>.</h2></div>
+    <div class="reveal"><div class="chap dark"><span class="n">05 / 10</span><span class="l"></span><span class="t">Chapter IV — The Craft</span></div><h2 class="craft-title">Everything we <em>build</em>.</h2></div>
     <div class="craft-body reveal reveal-1"><p>From the first site walk-through to the final commissioning document, every project is inspected, quoted, designed, installed, programmed, verified, and serviced by the same disciplined team.</p><p>Across <em>ten core practices</em>, we deliver fully engineered low-voltage security infrastructure — from the structured cabling beneath the slab to the operating systems that watch the perimeter.</p></div>
   </div>
   <div class="craft-list">
@@ -526,7 +539,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 <section class="partners" id="partners" aria-label="Brand partners">
   <div class="partners-inner">
     <div class="reveal">
-      <div class="chap"><span class="n">05 / 10</span><span class="l"></span><span class="t">Chapter IV — The Systems We Deploy</span></div>
+      <div class="chap"><span class="n">06 / 10</span><span class="l"></span><span class="t">Chapter V — The Systems We Deploy</span></div>
       <h2 class="partners-title">Fluent in the world's<br/><em>leading systems</em>.</h2>
       <p class="partners-sub">We design and integrate around the manufacturers whose engineering meets the standard our work requires.</p>
     </div>
@@ -538,7 +551,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 
 <section class="process" id="process" aria-label="Our process">
   <div class="process-head reveal">
-    <div class="chap" style="justify-content:center"><span class="l"></span><span class="n">06 / 10</span><span class="t">Chapter V — The Process</span><span class="l"></span></div>
+    <div class="chap" style="justify-content:center"><span class="l"></span><span class="n">07 / 10</span><span class="t">Chapter VI — The Process</span><span class="l"></span></div>
     <h2 class="process-title">Eight movements,<br/>one <em>discipline</em>.</h2>
     <p class="process-sub">Every project follows the same arc — the arc that makes the work defensible, the documents complete, and the system worthy of the brief.</p>
   </div>
@@ -552,19 +565,6 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
       <div class="proc-step reveal"><div class="proc-dot"></div><div class="proc-num">— VI —</div><div class="proc-name">Install</div><div class="proc-desc">Structured cabling, device mounting, programming, head-end configuration.</div></div>
       <div class="proc-step reveal reveal-1"><div class="proc-dot"></div><div class="proc-num">— VII —</div><div class="proc-name">Commission</div><div class="proc-desc">System verification, performance testing, training, as-builts, sign-off.</div></div>
       <div class="proc-step reveal reveal-2"><div class="proc-dot"></div><div class="proc-num">— VIII —</div><div class="proc-name"><em>Service</em></div><div class="proc-desc">Service contracts, maintenance, technical support, ongoing stewardship.</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="fleet" aria-label="Fleet">
-  <div class="fleet-inner">
-    <div class="fleet-head">
-      <div class="reveal"><div class="chap"><span class="n">07 / 10</span><span class="l"></span><span class="t">Chapter VI — The Fleet</span></div><h2 class="fleet-title">On site,<br/><em>equipped</em>.</h2></div>
-    </div>
-    <div class="fleet-photo-wrap reveal reveal-2">
-      <div class="fleet-photo" style="background-image:url('images/fleet-vehicles.webp');" role="img" aria-label="The Nexvelon Global fleet — branded vehicles and technicians outside the headquarters"></div>
-      <div class="fleet-photo-overlay"></div>
-      <div class="fleet-photo-caption">— THE NEXVELON FLEET · BRANDED · ENGINEERED · DEPLOYED —</div>
     </div>
   </div>
 </section>
@@ -585,27 +585,9 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
   </div>
 </section>
 
-<section class="faq" id="faq" aria-label="Frequently asked questions">
-  <div class="faq-head">
-    <div class="reveal"><div class="chap dark"><span class="n">09 / 10</span><span class="l"></span><span class="t">Chapter VIII — Questions, Answered</span></div><h2 class="faq-title">Frequently<br/><em>asked</em>.</h2></div>
-    <div class="faq-body reveal reveal-1"><p>Direct answers to the questions homeowners, condo boards, building managers, general contractors, project consultants, and institutional buyers ask Nexvelon most often.</p></div>
-  </div>
-  <div class="faq-list">
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">What does <em>Nexvelon Global</em> do?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text"><strong>Nexvelon Global</strong> is a Canadian security systems integrator. We design, install, supply, and service security systems across Canada. Services include CCTV camera installation, access control systems, intrusion alarms, fire alarm installation (with ULC-listed panels), structured cabling, maglocks, door hardware, intercoms, network switches, elevator phone line setup, and service contracts. We serve homes, condominiums, commercial buildings, industrial sites, and institutional facilities.</div></div></article>
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">What areas in <em>Canada</em> do you serve?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Nexvelon Global is a <strong>Canadian security systems integrator</strong> with primary operations based in the Greater Toronto Area. Locally we cover <strong>Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, Hamilton</strong>, and the entire GTA. Provincially we serve all of <strong>Ontario</strong>. Nationally we operate across Canada — including <strong>Ontario, Quebec, British Columbia, Alberta, Manitoba, Saskatchewan, Nova Scotia, New Brunswick, Newfoundland and Labrador, Prince Edward Island, Northwest Territories, Nunavut, and Yukon</strong>.</div></div></article>
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">Do you install <em>ULC-listed fire alarm</em> panels?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Yes. We install <strong>ULC-listed fire alarm panels</strong> and complete fire alarm systems to <strong>CAN/ULC-S524, ULC-S536, and ULC-S537</strong> standards. The panels and equipment we install are ULC-listed. Nexvelon is <strong>not currently a ULC-listed monitoring central station</strong>; our fire alarm installations integrate with established ULC-listed monitoring providers where the client requires monitored service.</div></div></article>
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">Can you handle a <em>single camera</em>, or only large projects?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Both. From a <strong>single doorbell camera</strong> at a residence to <strong>thousand-camera deployments</strong> across industrial complexes, we apply the same standard of design, installation, programming, commissioning, and documentation. There is no project too small or too large.</div></div></article>
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">What's the difference between <em>Integrated Solutions</em> and <em>Guardian</em>?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">They are two separate Ontario corporations operating under the Nexvelon Global business name. <strong>Nexvelon Integrated Solutions Inc.</strong> designs, supplies, installs, programs, and commissions security systems. <strong>Nexvelon Guardian Inc.</strong> supplies, installs, and monitors monitoring panels and services, and provides service contracts, maintenance, and ongoing system care. Each is independently incorporated; the contracts, obligations, and liabilities of one do not bind the other.</div></div></article>
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">Do you work with <em>general contractors</em> and developers?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Yes. We partner directly with <strong>general contractors, project managers, electrical contractors, design consultants, and property managers</strong> across Canada on commercial buildings, condominium developments, industrial sites, and institutional projects. We integrate into your construction schedule and produce all required permit and commissioning documentation.</div></div></article>
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">What <em>permits</em> are required?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Depending on the system type, jurisdiction, and province, you may require <strong>municipal permits</strong>, <strong>ESA</strong> (Electrical Safety Authority) filings in Ontario, and equivalent provincial electrical authority filings in other provinces. For fire alarm systems, ULC-S537 verification by a qualified party is required nationally. Nexvelon handles all permit applications, AHJ coordination, and filings as part of our standard process.</div></div></article>
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">How quickly can you <em>respond</em> to a service call?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">For clients on a Nexvelon Guardian service contract, we provide priority response with <strong>same-day attendance</strong> for emergency issues and <strong>scheduled service within 48 hours</strong> for non-urgent items where geographically feasible.</div></div></article>
-    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">How do I <em>get started</em>?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Begin with a consultation. Email <strong><a href="mailto:inquiries@NexvelonGlobal.com" style="color:#a07a2c">inquiries@NexvelonGlobal.com</a></strong> or call <strong>1-855-969-8566</strong>. We arrange a site walk-through, conduct a threat assessment, and provide a detailed quote at no cost or obligation.</div></div></article>
-  </div>
-</section>
-
 <section class="divisions" id="divisions" aria-label="Divisions">
   <div class="divisions-head reveal">
-    <div class="chap" style="justify-content:center"><span class="l"></span><span class="n">10 / 10</span><span class="t">Chapter IX — Our Companies</span><span class="l"></span></div>
+    <div class="chap" style="justify-content:center"><span class="l"></span><span class="n">09 / 10</span><span class="t">Chapter VIII — Our Companies</span><span class="l"></span></div>
     <h2 class="divisions-title">Two houses. <em>One discipline.</em></h2>
     <p class="divisions-sub">Under the Nexvelon Global business name, two operating companies serve distinct mandates as separate Ontario corporations.</p>
   </div>
@@ -620,13 +602,31 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
   <div class="cta-overlay"></div>
   <div class="cta-inner">
     <div class="cta-eye reveal">— EPILOGUE · BEGIN —</div>
-    <h2 class="cta-title reveal">We will take<br/>care of <em>everything</em>.</h2>
+    <h2 class="cta-title reveal">We will do<br/><em>Everything</em> for you.</h2>
     <p class="cta-sub reveal">To connect and have a word, please click below.</p>
     <div class="cta-actions reveal">
       <a href="mailto:inquiries@NexvelonGlobal.com?subject=Private%20Consultation%20Request" class="btn-primary" style="padding:19px 40px;font-size:13px">Request a private consultation</a>
       <a href="tel:+18559698566" class="btn-outline" style="padding:18px 36px;font-size:13px">Call 1-855-969-8566</a>
     </div>
     <div class="cta-direct reveal reveal-1">Or write directly: <a href="mailto:inquiries@NexvelonGlobal.com">inquiries@NexvelonGlobal.com</a></div>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-label="Frequently asked questions">
+  <div class="faq-head">
+    <div class="reveal"><div class="chap dark"><span class="n">10 / 10</span><span class="l"></span><span class="t">Chapter IX — Questions, Answered</span></div><h2 class="faq-title">Frequently<br/><em>asked</em>.</h2></div>
+    <div class="faq-body reveal reveal-1"><p>Direct answers to the questions homeowners, condo boards, building managers, general contractors, project consultants, and institutional buyers ask Nexvelon most often.</p></div>
+  </div>
+  <div class="faq-list">
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">What does <em>Nexvelon Global</em> do?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text"><strong>Nexvelon Global</strong> is a Canadian security systems integrator. We design, install, supply, and service security systems across Canada. Services include CCTV camera installation, access control systems, intrusion alarms, fire alarm installation (with ULC-listed panels), structured cabling, maglocks, door hardware, intercoms, network switches, elevator phone line setup, and service contracts. We serve homes, condominiums, commercial buildings, industrial sites, and institutional facilities.</div></div></article>
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">What areas in <em>Canada</em> do you serve?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Nexvelon Global is a <strong>Canadian security systems integrator</strong> with primary operations based in the Greater Toronto Area. Locally we cover <strong>Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, Hamilton</strong>, and the entire GTA. Provincially we serve all of <strong>Ontario</strong>. Nationally we operate across Canada — including <strong>Ontario, Quebec, British Columbia, Alberta, Manitoba, Saskatchewan, Nova Scotia, New Brunswick, Newfoundland and Labrador, Prince Edward Island, Northwest Territories, Nunavut, and Yukon</strong>.</div></div></article>
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">Do you install <em>ULC-listed fire alarm</em> panels?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Yes. We install <strong>ULC-listed fire alarm panels</strong> and complete fire alarm systems to <strong>CAN/ULC-S524, ULC-S536, and ULC-S537</strong> standards. The panels and equipment we install are ULC-listed. Nexvelon is <strong>not currently a ULC-listed monitoring central station</strong>; our fire alarm installations integrate with established ULC-listed monitoring providers where the client requires monitored service.</div></div></article>
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">Can you handle a <em>single camera</em>, or only large projects?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Both. From a <strong>single doorbell camera</strong> at a residence to <strong>thousand-camera deployments</strong> across industrial complexes, we apply the same standard of design, installation, programming, commissioning, and documentation. There is no project too small or too large.</div></div></article>
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">What's the difference between <em>Integrated Solutions</em> and <em>Guardian</em>?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">They are two separate Ontario corporations operating under the Nexvelon Global business name. <strong>Nexvelon Integrated Solutions Inc.</strong> designs, supplies, installs, programs, and commissions security systems. <strong>Nexvelon Guardian Inc.</strong> supplies, installs, and monitors monitoring panels and services, and provides service contracts, maintenance, and ongoing system care. Each is independently incorporated; the contracts, obligations, and liabilities of one do not bind the other.</div></div></article>
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">Do you work with <em>general contractors</em> and developers?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Yes. We partner directly with <strong>general contractors, project managers, electrical contractors, design consultants, and property managers</strong> across Canada on commercial buildings, condominium developments, industrial sites, and institutional projects. We integrate into your construction schedule and produce all required permit and commissioning documentation.</div></div></article>
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">What <em>permits</em> are required?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Depending on the system type, jurisdiction, and province, you may require <strong>municipal permits</strong>, <strong>ESA</strong> (Electrical Safety Authority) filings in Ontario, and equivalent provincial electrical authority filings in other provinces. For fire alarm systems, ULC-S537 verification by a qualified party is required nationally. Nexvelon handles all permit applications, AHJ coordination, and filings as part of our standard process.</div></div></article>
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">How quickly can you <em>respond</em> to a service call?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">For clients on a Nexvelon Guardian service contract, we provide priority response with <strong>same-day attendance</strong> for emergency issues and <strong>scheduled service within 48 hours</strong> for non-urgent items where geographically feasible.</div></div></article>
+    <article class="faq-item reveal"><div class="faq-q"><h3 class="faq-q-text">How do I <em>get started</em>?</h3><div class="faq-q-icon">+</div></div><div class="faq-a"><div class="faq-a-text">Begin with a consultation. Email <strong><a href="mailto:inquiries@NexvelonGlobal.com" style="color:#a07a2c">inquiries@NexvelonGlobal.com</a></strong> or call <strong>1-855-969-8566</strong>. We arrange a site walk-through, conduct a threat assessment, and provide a detailed quote at no cost or obligation.</div></div></article>
   </div>
 </section>
 
