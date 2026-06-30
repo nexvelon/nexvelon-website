@@ -141,10 +141,6 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .hero-dot{width:30px;height:2px;background:rgba(245,239,224,.25);cursor:pointer;transition:background .4s}
 .hero-dot.active{background:var(--gold)}
 
-.marquee{background:var(--noir-warm);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:28px 24px;text-align:center}
-.marquee-static{font-family:var(--serif);font-style:italic;font-size:clamp(16px,2vw,28px);color:var(--parchment);line-height:1.5;display:inline-block}
-.mq-item{padding:0 14px}
-.mq-dot{color:var(--gold);padding:0 10px}
 
 .chap{display:flex;align-items:center;gap:18px;margin-bottom:40px}
 .chap .n{font-family:var(--mono);font-size:11px;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
@@ -191,7 +187,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .work-title em{font-style:italic;color:var(--gold-light)}
 .work-sub{font-family:var(--serif);font-style:italic;font-size:22px;color:rgba(245,239,224,.6);max-width:760px;margin:0 auto 16px;line-height:1.55}
 .work-note{font-family:var(--mono);font-size:10px;letter-spacing:3px;color:rgba(245,239,224,.32);text-transform:uppercase;max-width:700px;margin:0 auto;line-height:1.7}
-.mosaic{max-width:1500px;margin:30px auto 0;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:240px;gap:6px}
+.mosaic{max-width:1500px;margin:30px auto 0;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:320px;gap:6px}
 .mt{position:relative;overflow:hidden;cursor:pointer}
 .mt-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.7) contrast(1.05) saturate(.95);transition:transform 1.4s cubic-bezier(.16,1,.3,1),filter .5s}
 .mt:hover .mt-bg{transform:scale(1.08);filter:brightness(.9)}
@@ -392,7 +388,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
   .hero-corner-tl,.hero-corner-tr,.hero-corner-bl,.hero-corner-br{display:none}
   .industries-grid{grid-template-columns:1fr}
   .coverage-head{grid-template-columns:1fr;gap:30px}.cov-grid,.cov-grid.provinces{grid-template-columns:1fr 1fr}
-  .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:270px}
   .mt-1,.mt-2,.mt-3,.mt-4,.mt-5,.mt-6,.mt-7,.mt-8{grid-column:auto;grid-row:auto}
   .craft-head{grid-template-columns:1fr;gap:30px}.craft-row{grid-template-columns:60px 1fr;gap:20px}
   .craft-num{grid-column:1}.craft-name{grid-column:2;font-size:24px}.craft-desc{grid-column:1/3}.craft-arrow{display:none}
@@ -464,12 +460,6 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
     </div>
   </div>
 </section>
-
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-static">
-    <span class="mq-item">CCTV · Access · Fire · Intrusion</span><span class="mq-dot">◆</span><span class="mq-item">Engineered to Protect Everything That Matters</span><span class="mq-dot">◆</span><span class="mq-item">A Canadian House</span>
-  </div>
-</div>
 
 <section class="industries" id="industries" aria-label="Sectors served">
   <div class="industries-head reveal">
