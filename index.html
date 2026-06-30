@@ -156,9 +156,9 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .industries-head{max-width:1500px;margin:0 auto 70px}
 .industries-title{font-family:var(--serif);font-size:clamp(50px,8vw,110px);font-weight:300;line-height:.95;letter-spacing:-2px;color:var(--parchment);margin-bottom:26px}
 .industries-title em{font-style:italic;color:var(--gold-light)}
-.industries-sub{font-family:var(--serif);font-style:italic;font-size:22px;color:rgba(245,239,224,.6);max-width:700px;line-height:1.55}
+.industries-sub{font-family:var(--serif);font-style:italic;font-size:22px;color:rgba(245,239,224,.6);max-width:85ch;line-height:1.55}
 .industries-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;max-width:1500px;margin:0 auto}
-.ind-tile{aspect-ratio:3/4;position:relative;overflow:hidden;cursor:pointer}
+.ind-tile{aspect-ratio:16/10;position:relative;overflow:hidden;cursor:pointer}
 .ind-tile-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.55) contrast(1.05);transition:transform 1.6s cubic-bezier(.16,1,.3,1),filter .6s}
 .ind-tile:hover .ind-tile-bg{transform:scale(1.08);filter:brightness(.75)}
 .ind-tile-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(10,8,7,.95) 100%)}
@@ -349,13 +349,13 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 .dc:hover .dc-cta::after{transform:translateX(8px)}
 
 .cta{min-height:90vh;background:var(--noir);display:flex;align-items:center;justify-content:center;padding:130px 56px;text-align:center;position:relative;overflow:hidden}
-.cta-bg{position:absolute;inset:0;background-image:url('images/yacht-event.webp');background-size:cover;background-position:center;filter:brightness(.6) contrast(1.05);opacity:.8}
-.cta-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(160,122,44,.18) 0%,transparent 50%),linear-gradient(180deg,rgba(10,8,7,.3) 0%,rgba(10,8,7,.7) 100%)}
+.cta-bg{position:absolute;inset:0;background-image:url('images/yacht-event.webp');background-size:cover;background-position:center;filter:brightness(.78) contrast(1.05);opacity:.92}
+.cta-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(160,122,44,.18) 0%,transparent 50%),linear-gradient(180deg,rgba(10,8,7,.18) 0%,rgba(10,8,7,.5) 100%)}
 .cta-inner{position:relative;z-index:2;max-width:1100px}
-.cta-eye{font-family:var(--mono);font-size:11px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:32px}
-.cta-title{font-family:var(--serif);font-size:clamp(60px,10vw,140px);font-weight:300;line-height:.95;letter-spacing:-2px;color:var(--parchment);margin-bottom:36px}
+.cta-eye{font-family:var(--mono);font-size:9px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:32px}
+.cta-title{font-family:var(--serif);font-size:clamp(45px,7.5vw,105px);font-weight:300;line-height:.95;letter-spacing:-2px;color:var(--parchment);margin-bottom:36px}
 .cta-title em{font-style:italic;color:var(--gold-light)}
-.cta-sub{font-family:var(--serif);font-style:italic;font-size:22px;color:rgba(245,239,224,.7);max-width:640px;margin:0 auto 40px;line-height:1.55}
+.cta-sub{font-family:var(--serif);font-style:italic;font-size:19px;color:rgba(245,239,224,.7);max-width:640px;margin:0 auto 40px;line-height:1.55}
 .cta-actions{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
 .cta-direct{font-family:var(--mono);font-size:12px;letter-spacing:3px;color:rgba(245,239,224,.55);text-transform:uppercase}
 .cta-direct a{color:var(--gold-light);text-decoration:none;transition:color .3s}
@@ -511,35 +511,14 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
     </div>
     <div class="fleet-photo-wrap reveal reveal-2">
       <div class="fleet-photo" style="background-image:url('images/fleet-vehicles.webp');" role="img" aria-label="The Nexvelon Global fleet — branded vehicles and technicians outside the headquarters"></div>
-      <div class="fleet-photo-overlay"></div>
-      <div class="fleet-photo-caption">— THE NEXVELON FLEET · BRANDED · ENGINEERED · DEPLOYED —</div>
-    </div>
-  </div>
-</section>
-
-<section class="craft" id="craft" aria-label="Capabilities">
-  <div class="craft-head">
-    <div class="reveal"><div class="chap dark"><span class="n">05 / 10</span><span class="l"></span><span class="t">Chapter IV — The Craft</span></div><h2 class="craft-title">Everything we <em>build</em>.</h2></div>
-    <div class="craft-body reveal reveal-1"><p>From the first site walk-through to the final commissioning document, every project is inspected, quoted, designed, installed, programmed, verified, and serviced by the same disciplined team.</p><p>Across <em>ten core practices</em>, we deliver fully engineered low-voltage security infrastructure — from the structured cabling beneath the slab to the operating systems that watch the perimeter.</p></div>
-  </div>
-  <div class="craft-list">
-    <article class="craft-row reveal"><div class="craft-num">01</div><h3 class="craft-name">System Design</h3><div class="craft-desc">Site survey, threat assessment, system architecture, schematics, equipment specifications, integration drawings — the blueprint that makes every project possible.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">02</div><h3 class="craft-name">Project Management</h3><div class="craft-desc">Single point of accountability from kickoff through close-out. Procurement, scheduling, trades coordination, milestone reporting, stakeholder communication.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">03</div><h3 class="craft-name">Structured Cabling</h3><div class="craft-desc">Low-voltage cabling, conduit, terminations, patch panels, network rooms — the unseen architecture beneath every system. Built to outlast the equipment.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">04</div><h3 class="craft-name">Surveillance &amp; CCTV</h3><div class="craft-desc">Forensic-grade camera networks across Avigilon, Hanwha, Axis, Milestone, Genetec and more. Designed around the geometry, lit by the conditions, installed to standard.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">05</div><h3 class="craft-name">Access Control</h3><div class="craft-desc">Credential, biometric, and mobile entry across Kantech, Keyscan, ICT, Hartmann, Genetec, C·Cure and more. Every door, logged. Every entry, accounted for.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">06</div><h3 class="craft-name">Intrusion Detection</h3><div class="craft-desc">DSC, Bosch, Honeywell and more — perimeter and interior intrusion, partitioned arming, integrated reporting. Layered against threats not yet announced.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">07</div><h3 class="craft-name">Fire Alarm Installation</h3><div class="craft-desc">Installation of ULC-listed fire alarm panels and complete systems to CAN/ULC-S524, S536, S537 standards.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">08</div><h3 class="craft-name">Door Hardware &amp; Maglocks</h3><div class="craft-desc">Maglocks, electric strikes, door holders, request-to-exit devices, card readers, and the low-voltage architecture that orchestrates them.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">09</div><h3 class="craft-name">Network &amp; Intercom</h3><div class="craft-desc">Managed network switches, VLAN segmentation, IP intercoms and entry phones. The data backbone every modern system runs across.</div><div class="craft-arrow">→</div></article>
-    <article class="craft-row reveal"><div class="craft-num">10</div><h3 class="craft-name">Permits &amp; Documentation</h3><div class="craft-desc">City permits, ESA filings, ECRA compliance, as-built drawings, and commissioning documents — the paper trail that makes every install defensible.</div><div class="craft-arrow">→</div></article>
+      <div class="fleet-photo-overlay"></div>    </div>
   </div>
 </section>
 
 <section class="partners" id="partners" aria-label="Brand partners">
   <div class="partners-inner">
     <div class="reveal">
-      <div class="chap"><span class="n">06 / 10</span><span class="l"></span><span class="t">Chapter V — The Systems We Deploy</span></div>
+      <div class="chap"><span class="n">05 / 10</span><span class="l"></span><span class="t">Chapter IV — The Systems We Deploy</span></div>
       <h2 class="partners-title">Fluent in the world's<br/><em>leading systems</em>.</h2>
       <p class="partners-sub">We design and integrate around the manufacturers whose engineering meets the standard our work requires.</p>
     </div>
@@ -551,7 +530,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 
 <section class="process" id="process" aria-label="Our process">
   <div class="process-head reveal">
-    <div class="chap" style="justify-content:center"><span class="l"></span><span class="n">07 / 10</span><span class="t">Chapter VI — The Process</span><span class="l"></span></div>
+    <div class="chap" style="justify-content:center"><span class="l"></span><span class="n">06 / 10</span><span class="t">Chapter V — The Process</span><span class="l"></span></div>
     <h2 class="process-title">Eight movements,<br/>one <em>discipline</em>.</h2>
     <p class="process-sub">Every project follows the same arc — the arc that makes the work defensible, the documents complete, and the system worthy of the brief.</p>
   </div>
@@ -574,7 +553,7 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
   <div class="guardian-overlay"></div>
   <div class="guardian-inner">
     <div class="guardian-head">
-      <div class="reveal"><div class="chap"><span class="n">08 / 10</span><span class="l"></span><span class="t">Chapter VII — Service &amp; Care</span></div><h2 class="guardian-title">Always<br/><em>supported</em>.</h2></div>
+      <div class="reveal"><div class="chap"><span class="n">07 / 10</span><span class="l"></span><span class="t">Chapter VI — Service &amp; Care</span></div><h2 class="guardian-title">Always<br/><em>supported</em>.</h2></div>
       <div class="guardian-sub reveal reveal-1">Nexvelon Guardian Inc. and Nexvelon Integrated Solutions Inc. are the operating houses for service contracts, maintenance, and ongoing system care — the careful work that keeps every engineered installation performing at standard.</div>
     </div>
     <div class="guardian-grid">
@@ -587,13 +566,32 @@ body{background:var(--noir);color:var(--parchment);font-family:var(--sans);overf
 
 <section class="divisions" id="divisions" aria-label="Divisions">
   <div class="divisions-head reveal">
-    <div class="chap" style="justify-content:center"><span class="l"></span><span class="n">09 / 10</span><span class="t">Chapter VIII — Our Companies</span><span class="l"></span></div>
+    <div class="chap" style="justify-content:center"><span class="l"></span><span class="n">08 / 10</span><span class="t">Chapter VII — Our Companies</span><span class="l"></span></div>
     <h2 class="divisions-title">Two houses. <em>One discipline.</em></h2>
     <p class="divisions-sub">Under the Nexvelon Global business name, two operating companies serve distinct mandates as separate Ontario corporations.</p>
   </div>
   <div class="divisions-grid">
     <article class="dc reveal"><div class="dc-tag">— House I —</div><h3 class="dc-name">Nexvelon<br/><em>Integrated Solutions</em></h3><p class="dc-desc">The atelier of design, installation, programming, and commissioning. Where the systems are conceived, drawn, and brought into being.</p><div class="dc-services"><span>Inspect</span><span>Quote</span><span>Design</span><span>Permits</span><span>Supply</span><span>Install</span><span>Commission</span></div><a href="mailto:inquiries@NexvelonGlobal.com?subject=Integrated%20Solutions%20Inquiry" class="dc-cta">Explore the atelier</a></article>
     <article class="dc reveal reveal-1"><div class="dc-tag">— House II —</div><h3 class="dc-name">Nexvelon<br/><em>Guardian</em></h3><p class="dc-desc">The vigil of service. Service contracts, maintenance, and ongoing care of installed systems. The careful work that keeps every install performing.</p><div class="dc-services"><span>Fire Service</span><span>Elevator Phone</span><span>Maintenance</span><span>Repairs</span><span>Support</span><span>Stewardship</span></div><a href="mailto:inquiries@NexvelonGlobal.com?subject=Guardian%20Service%20Inquiry" class="dc-cta">Enter the vigil</a></article>
+  </div>
+</section>
+
+<section class="craft" id="craft" aria-label="Capabilities">
+  <div class="craft-head">
+    <div class="reveal"><div class="chap dark"><span class="n">09 / 10</span><span class="l"></span><span class="t">Chapter VIII — The Craft</span></div><h2 class="craft-title">Everything we <em>build</em>.</h2></div>
+    <div class="craft-body reveal reveal-1"><p>From the first site walk-through to the final commissioning document, every project is inspected, quoted, designed, installed, programmed, verified, and serviced by the same disciplined team.</p><p>Across <em>ten core practices</em>, we deliver fully engineered low-voltage security infrastructure — from the structured cabling beneath the slab to the operating systems that watch the perimeter.</p></div>
+  </div>
+  <div class="craft-list">
+    <article class="craft-row reveal"><div class="craft-num">01</div><h3 class="craft-name">System Design</h3><div class="craft-desc">Site survey, threat assessment, system architecture, schematics, equipment specifications, integration drawings — the blueprint that makes every project possible.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">02</div><h3 class="craft-name">Project Management</h3><div class="craft-desc">Single point of accountability from kickoff through close-out. Procurement, scheduling, trades coordination, milestone reporting, stakeholder communication.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">03</div><h3 class="craft-name">Structured Cabling</h3><div class="craft-desc">Low-voltage cabling, conduit, terminations, patch panels, network rooms — the unseen architecture beneath every system. Built to outlast the equipment.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">04</div><h3 class="craft-name">Surveillance &amp; CCTV</h3><div class="craft-desc">Forensic-grade camera networks across Avigilon, Hanwha, Axis, Milestone, Genetec and more. Designed around the geometry, lit by the conditions, installed to standard.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">05</div><h3 class="craft-name">Access Control</h3><div class="craft-desc">Credential, biometric, and mobile entry across Kantech, Keyscan, ICT, Hartmann, Genetec, C·Cure and more. Every door, logged. Every entry, accounted for.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">06</div><h3 class="craft-name">Intrusion Detection</h3><div class="craft-desc">DSC, Bosch, Honeywell and more — perimeter and interior intrusion, partitioned arming, integrated reporting. Layered against threats not yet announced.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">07</div><h3 class="craft-name">Fire Alarm Installation</h3><div class="craft-desc">Installation of ULC-listed fire alarm panels and complete systems to CAN/ULC-S524, S536, S537 standards.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">08</div><h3 class="craft-name">Door Hardware &amp; Maglocks</h3><div class="craft-desc">Maglocks, electric strikes, door holders, request-to-exit devices, card readers, and the low-voltage architecture that orchestrates them.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">09</div><h3 class="craft-name">Network &amp; Intercom</h3><div class="craft-desc">Managed network switches, VLAN segmentation, IP intercoms and entry phones. The data backbone every modern system runs across.</div><div class="craft-arrow">→</div></article>
+    <article class="craft-row reveal"><div class="craft-num">10</div><h3 class="craft-name">Permits &amp; Documentation</h3><div class="craft-desc">City permits, ESA filings, ECRA compliance, as-built drawings, and commissioning documents — the paper trail that makes every install defensible.</div><div class="craft-arrow">→</div></article>
   </div>
 </section>
 
